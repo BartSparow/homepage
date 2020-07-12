@@ -1,0 +1,46 @@
+.navigation {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: 1px 3px 5px #5a3e3e;
+    }
+
+.navigation__list {
+    margin: auto;
+    padding-left: 0;
+    text-align: center;
+    font-family: 'Montserrat';
+}
+
+.navigation__item {
+    display: inline-block;
+    padding: 10px 0;
+    list-style-type: none;
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.navigation__link {
+    padding: 20px;
+    color: #010101;
+    text-decoration: none;
+}
+
+.navigation__link:visited {
+    color: #010101;
+}
+
+.navigation__link:focus {
+    outline: 2px solid #010101;
+}
+
+.navigation__link:hover {
+    color: #030303;
+    text-decoration: underline;
+}
+
+.navigation__link:active {
+    color: #020202;
+    outline: none;
+}

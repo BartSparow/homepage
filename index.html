@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bartek BEM</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/navigation.css" rel="stylesheet">
+    <link href="css/section.css" rel="stylesheet">
+    <link href="css/tableContainer.css" rel="stylesheet">
+    <link href="css/table.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1 class="header__title">Bartek Wróblewski</h1>
+    </header>
+    <nav class="navigation">
+        <ul class="navigation__list">
+            <li class="navigation__item"><a class="navigation__link" href=#first-section>Parę słów o mnie</a></li>
+            <li class="navigation__item"><a class="navigation__link" href=#second-section>Hobby</a></li>
+            <li class="navigation__item"><a class="navigation__link" href=#third-section>Tabela</a></li>
+            <li class="navigation__item"><a class="navigation__link" href=#fourth-section>Interakcja w JS</a></li>
+            <li class="navigation__item"><a class="navigation__link" href=#fifth-section>Kontakt</a></li>
+        </ul>
+    </nav>
+    <main class="main">
+        <section id="first-section" class="section">
+            <h2 class="section__header">O mnie</h2>
+            <img width="300" src="https://i.ibb.co/ZKD3VPk/bart.jpg" alt="Bartek z Funcabem"
+                class="section__photoBart js__photoBart">
+            <button class="section__button js-showHidePhotoBartButton">Ukryj zdjęcie</button>
+            <p class="section__paragraph"><em>Ahoj!</em></p>
+            <p class="section__paragraph">Mam na imię Bartek i jestem inżynierem elektrykiem. <strong> Elektrotechnika i
+                    elektronika</strong> są moimi wielkimi pasjami. Elektroniką zainteresoałem się jeszcze w szkole
+                podstawowej i poniekąd do dnia dzisiejszego się nią zajmuję. Po szkole podstawowej było technikum
+                Elektroniczne. W piątej klasie technikum przpadkiem, znalazłem się na <strong>Dniach Otwartych Wydziału
+                    Elektrycznego Politechniki Warszawskiej</strong>. Tam na hali wysokich napięć zobaczyłem sztuczny
+                piorun w odległości 5 - 6 m ode mnie i mnie <i>wciągneło</i>.
+            </p>
+        </section>
+        <section id="second-section" class="section">
+            <h2 class="section__header">Hobby</h2>
+            <p class="section__paragraph">W pracy zawodowej zajumuję się głównie projektowaniem instalacji elektryczych,
+                a także uruchomieniami, pomiarami, doractwem i szkoleniami w zakresie systemów rodziału mocy dla biur
+                projektowych i firm wykonawczych. Poza pracą zawadową zajmuję się hobbystycznie
+                <strong>żeglarstwem</strong>, <strong>modelarstwem RC</strong> i jazdą na <strong>rowerze.</strong> W
+                mojej praktyce zawodowej posługije się oprogramowaniem do modelowania 3D <strong>AutoCAD, Fiuson
+                    360, itp</strong>. Dzięki zdobytemu doświadczeniu zaprojektowałem w <i>AutoCAD'e</i> model samolotu
+                <strong>Piper PA18 SuperCuB</strong> Wszystkie zaprojektowane elementy elementy zostały wycięte ze
+                sklejki lipowo balsowej za pomocą laserowej maszyny CNC. Jestem bardzo dumny z tego modelu, mimo że jest
+                to prototyp lata fantastycznie. Jak będę miał więcej czasu powstanie druga wersja pozbawiona mankamentów
+                prototypu. </p>
+
+
+        </section>
+        <section id="third-section" class="section">
+            <h2 class="section__header">Tabela</h2>
+            <div class="tableContainer">
+                <table class="table">
+                    <caption class="table__caption">Lista Rozdzielnic</caption>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="col" rowspan="2">Nr</th>
+                        <th class="table__cell table__cell--header" scope="col">Index rozdzielnicy</th>
+                        <th class="table__cell table__cell--header" scope="col">Gabaryty</th>
+                        <th class="table__cell table__cell--header" scope="col">In</th>
+                        <th class="table__cell table__cell--header" scope="col">Cena</th>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell">[-]</th>
+                        <td class="table__cell">SxWxG [mm]</td>
+                        <td class="table__cell">A</td>
+                        <td class="table__cell">PLN</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">1</th>
+                        <td class="table__cell"><i>RGnn1</i></td>
+                        <td class="table__cell">5000x2035x600</td>
+                        <td class="table__cell">3200</td>
+                        <td class="table__cell">40000</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">2</th>
+                        <td class="table__cell"><i>RGnn2</i></td>
+                        <td class="table__cell">5000x2035x600</td>
+                        <td class="table__cell">3200</td>
+                        <td class="table__cell">50000</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row">3</th>
+                        <td class="table__cell"><i>RGPOŻ</i></td>
+                        <td class="table__cell">2000x2035x600</td>
+                        <td class="table__cell">1250</td>
+                        <td class="table__cell">25000</td>
+                    </tr>
+                    <tr class="table__row">
+                        <th class="table__cell table__cell--header" scope="row" colspan="4S"><strong>SUMA</strong></th>
+                        <td class="table__cell">115000</td>
+                    </tr>
+                </table>
+            </div>
+
+
+        </section>
+        <section id="fourth-section" class="section">
+            <h2 class="section__header">Interakcja w JS</h2>
+            <button class="section__button changeBackground">Włącz ciemne tło</button>
+        </section>
+
+
+        <section id="fifth-section" class="section">
+            <h2 class="section__header">Kontakt</h2>
+            <p class="section__textBox section__textBox--centered"> Kontakt <a class="section__link"
+                    href="mailto:b.m.wroblewski@gmail.com">b.m.wroblewski@gmail.com</a></p>
+        </section>
+    </main>
+    <footer class="footer">© 2020 Bartek Wróblewski.</footer>
+</body>
+
+</html>
